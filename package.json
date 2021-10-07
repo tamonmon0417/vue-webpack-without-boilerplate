@@ -1,0 +1,59 @@
+{
+  "name": "vue-webpack-vuex-vuetify-eslint-without-boilerplate",
+  "version": "1.0.0",
+  "description": "vue-webpack-vuex-vuetify-eslint-without-boilerplate",
+  "scripts": {
+    "dev": "webpack-dev-server --hot",
+    "build": "webpack -p",
+    "lint": "eslint src",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tamon Okamoto",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.2",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "deepmerge": "^4.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.18.0",
+    "husky": "4",
+    "lint-staged": "^11.1.2",
+    "sass": "1.32.13",
+    "sass-loader": "7.3.1",
+    "style-loader": "^0.23.0",
+    "vue-eslint-parser": "^7.11.0",
+    "vue-loader": "^15.4.2",
+    "vue-router": "^3.5.2",
+    "vue-template-compiler": "^2.5.17",
+    "vuetify": "^2.5.8",
+    "vuetify-loader": "^1.7.3",
+    "vuex": "^3.6.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

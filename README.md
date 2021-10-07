@@ -1,0 +1,1 @@
+# vue-webpack-vuex-vuetify-eslint-template-without-boilerplate
